@@ -5,7 +5,6 @@ scala:
   - 2.11.7
 script:
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash framework/bin/sourceclear; fi'
-  - framework/bin/travis
 notifications:
   email:
     recipients:
