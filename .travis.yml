@@ -4,7 +4,6 @@ jdk:
 scala:
    - 2.11.7
 script:
-  - sbt test
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash framework/bin/sourceclear; fi'
   - framework/bin/travis
   notifications:
