@@ -1,4 +1,11 @@
 language: scala
+jdk:
+  - oraclejdk8
 scala:
-   - 2.11.7
-script: sbt test
+  - 2.11.7
+notifications:
+  email:
+    recipients:
+      - vaun-pierre@hotmail.com
+    on_success: never # default: change
+    on_failure: always # default: always
