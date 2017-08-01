@@ -18,7 +18,7 @@ class IntegrationSpec extends Specification {
 
       browser.goTo("http://localhost:" + port)
 
-      browser.pageSource must contain("Precision Graphics")
+      browser.pageSource must contain("Welcome to Play")
     }
   }
 }
