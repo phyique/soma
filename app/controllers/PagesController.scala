@@ -7,18 +7,40 @@ import play.api.mvc.{AbstractController, ControllerComponents}
 @Singleton
 class PagesController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
-  /**
-    * Create an Action to render an HTML page with a welcome message.
-    * The configuration in the `routes` file means that this method
-    * will be called when the application receives a `GET` request with
-    * a path of `/`.
-    */
   def contact = Action {
     Ok(views.html.contact())
   }
 
+  /** About menu items */
   def about = Action {
     Ok(views.html.about())
   }
+
+  def career = Action {
+    Ok(views.html.career())
+  }
+
+  /** Products & Services menu items */
+  def products = Action {
+    Ok(views.html.products())
+  }
+
+  def quote = Action {
+    Ok(views.html.quote())
+  }
+
+  def upload = Action {
+    Ok(views.html.upload())
+  }
+
+  /** Pages not on nav-bar items */
+  def faq = Action {
+    Ok(views.html.faq())
+  }
+
+  def portfolio = Action {
+    Ok(views.html.portfolio())
+  }
+
 
 }
