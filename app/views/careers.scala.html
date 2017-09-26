@@ -1,13 +1,13 @@
-{% extends 'precision/base.html' %}
-{% load staticfiles %}
+@scripts = {
 
-{% block title %}
-A Career at
-{% endblock %}
+}
 
-{% block active1 %} class="active"{% endblock %}
+@headTags = {
 
-{% block body_content %}
+}
+
+@main("This is Careers", scripts, headTags) {
+
 <div class="container">
 
         <!-- Page Heading/Breadcrumbs -->
@@ -15,7 +15,8 @@ A Career at
         <div class="col-lg-12">
             <h1 id='pageheader' class="page-header">Career</h1>
             <ol class="breadcrumb">
-                <li><a href="{% url 'precision:index' %}">Home</a>
+                <li><a href="">Home</a>
+
                 </li>
                 <li class="active">Career</li>
             </ol>
@@ -54,11 +55,11 @@ A Career at
 
         <!-- /.row -->
 
-
         <!-- Footer -->
     <hr>
 
 </div>
-{% endblock %}
+
+}
 
 

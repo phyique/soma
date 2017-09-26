@@ -1,3 +1,22 @@
+
+@scripts = {
+    <script type="text/javascript" src="@routes.Assets.versioned("javascripts/carousal.js")"></script>
+
+        <!-- Script to Activate the Carousel -->
+    <script>
+            $('.carousel').carousel({
+                interval: 5000 //changes the speed
+            })
+    </script>
+}
+
+@headTags = {
+    <link href="@routes.Assets.versioned("javascripts/carousal.js")" media="print, screen" rel="Stylesheet"
+    type="text/css"/>
+}
+
+@main("Welcome to Play", scripts, headTags) {
+
 <div class="container">
 
         <!-- Page Heading/Breadcrumbs -->
@@ -62,4 +81,5 @@
 
 </div>
 
+}
 

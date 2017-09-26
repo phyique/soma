@@ -16,10 +16,6 @@ class PagesController @Inject()(cc: ControllerComponents) extends AbstractContro
     Ok(views.html.about())
   }
 
-  def career = Action {
-    Ok(views.html.career())
-  }
-
   /** Products & Services menu items */
   def products = Action {
     Ok(views.html.products())
@@ -40,6 +36,10 @@ class PagesController @Inject()(cc: ControllerComponents) extends AbstractContro
 
   def portfolio = Action {
     Ok(views.html.portfolio())
+  }
+
+  def career = Action {
+    Ok(views.html.careers())
   }
 
 
