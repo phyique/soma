@@ -17,4 +17,8 @@ class PagesController @Inject()(cc: ControllerComponents) extends AbstractContro
     Ok(views.html.contact())
   }
 
+  def about = Action {
+    Ok(views.html.about())
+  }
+
 }
