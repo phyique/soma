@@ -13,11 +13,11 @@ class FunctionalSpec extends PlaySpec with GuiceOneAppPerSuite {
   "Routes" should {
 
     "send 404 on a bad request" in  {
-      route(app, FakeRequest(GET, "/boum")).map(status(_)) mustBe Some(NOT_FOUND)
+      route(app, FakeRequest(GET, "/boum")).map(status) mustBe Some(NOT_FOUND)
     }
 
     "send 200 on a good request" in  {
-      route(app, FakeRequest(GET, "/")).map(status(_)) mustBe Some(OK)
+      route(app, FakeRequest(GET, "/")).map(status) mustBe Some(OK)
     }
 
   }
@@ -29,7 +29,7 @@ class FunctionalSpec extends PlaySpec with GuiceOneAppPerSuite {
 
       status(home) mustBe Status.OK
       contentType(home) mustBe Some("text/html")
-      contentAsString(home) must include ("Your new application is ready.")
+      contentAsString(home) must include ("PRECISION GRAPHICS")
     }
 
   }
